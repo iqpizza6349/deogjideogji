@@ -17,9 +17,14 @@ spring:
         format_sql: true
         show_sql: true
         use_sql_comments: true
+      jakarta:
+        persistence:
+          sharedCache:
+            mode: ALL
     generate-ddl: true
     hibernate:
       ddl-auto: update
+    open-in-view: false
   batch:
     jdbc:
       platform: postgresql
